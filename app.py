@@ -17,12 +17,13 @@ This app counts the nucleotide composition of query DNA!
 
 # Input Text Box
 
-#st.sidebar.header('Enter DNA sequence')
+# sidebar header
 st.header('Enter DNA sequence')
 
+# default input sequence
 sequence_input = ">DNA Query 2\nGAACACGTGGAGGCAAACAGGAAGGTGAAGAAGAACTTATCCTATCAGGACGGAAGGTCCTGTGCTCGGG\nATCTTCCAGACGTCGCGACTCTAAATTGCCCCCTCTGAGGTCAAGGAACACAAGATGGTTTTGGAAATGC\nTGAACCCGATACATTATAACATCACCAGCATCGTGCCTGAAGCCATGCCTGCTGCCACCATGCCAGTCCT"
 
-#sequence = st.sidebar.text_area("Sequence input", sequence_input, height=250)
+# sidebar text box
 sequence = st.text_area("Sequence input", sequence_input, height=250)
 sequence = sequence.splitlines()
 sequence = sequence[1:] # Skips the sequence name (first line)
@@ -51,11 +52,10 @@ def DNA_nucleotide_count(seq):
   return d
 
 X = DNA_nucleotide_count(sequence)
+X
 
 #X_label = list(X)
 #X_values = list(X.values())
-
-X
 
 ### 2. Print text
 st.subheader('2. Print text')
