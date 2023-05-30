@@ -5,10 +5,10 @@ A Simple Streamlit app that counts the nucleotide composition of DNA from input 
 ## Screen Capture  
 
 ### 1. Main Window  
-![Main Window](/ScreenCapture/main.png)  
+![Main Window](/ScreenCapture/main.PNG)  
 
 ### 2. Input Query  
-![Input Query](/ScreenCapture/input.png)
+![Input Query](/ScreenCapture/input.PNG)
 
 ### 3. Displayed dataframe  
 ![Main Window](/ScreenCapture/data.PNG)  
